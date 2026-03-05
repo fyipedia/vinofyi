@@ -2,6 +2,10 @@
 
 Wine knowledge API client for developers -- search wines, grapes, regions, and wine terminology from [VinoFYI](https://vinofyi.com).
 
+<p align="center">
+  <img src="demo.gif" alt="vinofyi demo — wine API search and lookup" width="800">
+</p>
+
 ## Install
 
 ```bash
