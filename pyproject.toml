@@ -1,6 +1,6 @@
 [project]
 name = "vinofyi"
-version = "0.1.0"
+version = "0.1.1"
 description = "Wine knowledge API client — search wines, grapes, regions, and wine terms from VinoFYI."
 readme = "README.md"
 license = "MIT"
