@@ -73,6 +73,8 @@ Wine is classified into six major categories based on production method, color, 
 
 Understanding wine types is essential for proper service temperature, glassware selection, and food pairing decisions.
 
+Learn more: [Wine Types Guide](https://vinofyi.com/type/) · [Wine Encyclopedia](https://vinofyi.com/wine/)
+
 ### Grape Varieties
 
 VinoFYI catalogs 777 grape varieties with detailed profiles including origin, flavor descriptors, ideal growing conditions, and notable wine regions. Grapes are the foundation of wine character -- the same variety planted in different terroirs produces dramatically different wines.
@@ -87,15 +89,21 @@ Key grape attributes tracked in the database:
 - **Climate preference** -- cool, moderate, or warm climate suitability
 - **Typical flavor profile** -- primary, secondary, and tertiary aromas
 
+Learn more: [Browse 777 Grape Varieties](https://vinofyi.com/grape/) · [Grape Search](https://vinofyi.com/search/)
+
 ### Wine Regions and Terroir
 
 Wine regions are organized hierarchically from country to specific appellations. Terroir -- the complete natural environment in which a wine is produced -- encompasses climate, soil composition, altitude, aspect, and local traditions. The concept of terroir explains why a Pinot Noir from Burgundy tastes fundamentally different from one grown in Oregon's Willamette Valley.
 
 Major wine-producing countries include France, Italy, Spain, the United States, Argentina, Chile, Australia, Germany, Portugal, and South Africa. Each country's appellation system (AOC, DOC, AVA, GI) defines quality standards and geographic boundaries.
 
+Learn more: [Explore Wine Regions](https://vinofyi.com/region/) · [Country Profiles](https://vinofyi.com/country/)
+
 ### Wine Guides
 
 VinoFYI features 230 expert guides covering wine tasting methodology, food pairing principles, cellar management, and regional deep-dives. Guides range from beginner topics like understanding wine labels to advanced subjects like malolactic fermentation chemistry and barrel aging programs.
+
+Learn more: [Wine Guides Library](https://vinofyi.com/guide/) · [Wine Glossary](https://vinofyi.com/glossary/)
 
 ## API Endpoints
 
