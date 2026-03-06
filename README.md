@@ -9,7 +9,7 @@ Wine knowledge API client for Python. Search wines, grapes, regions, wineries, a
 > **Explore wine at [vinofyi.com](https://vinofyi.com)** -- [Wine Directory](https://vinofyi.com/wines/) | [Grape Varieties](https://vinofyi.com/grapes/) | [Wine Regions](https://vinofyi.com/regions/) | [Wineries](https://vinofyi.com/wineries/) | [Wine Guides](https://vinofyi.com/guides/)
 
 <p align="center">
-  <img src="demo.gif" alt="vinofyi demo -- wine API search and lookup" width="800">
+  <img src="https://raw.githubusercontent.com/fyipedia/vinofyi/main/demo.gif" alt="vinofyi demo -- wine API search and lookup" width="800">
 </p>
 
 ## Table of Contents
@@ -27,7 +27,6 @@ Wine knowledge API client for Python. Search wines, grapes, regions, wineries, a
 - [API Client](#api-client)
 - [Learn More About Wine](#learn-more-about-wine)
 - [Beverage FYI Family](#beverage-fyi-family)
-- [FYIPedia Developer Tools](#fyipedia-developer-tools)
 - [License](#license)
 
 ## Install
@@ -222,40 +221,17 @@ with VinoFYI() as api:
 
 ## Beverage FYI Family
 
+Part of the [FYIPedia](https://fyipedia.com) open-source developer tools ecosystem -- world beverages from cocktails to sake.
+
 | Site | Domain | Focus |
 |------|--------|-------|
-| CocktailFYI | [cocktailfyi.com](https://cocktailfyi.com) | 636 cocktail recipes, ABV, calories, flavor profiles |
+| CocktailFYI | [cocktailfyi.com](https://cocktailfyi.com) | 636 cocktails, ABV, calories, flavor profiles |
 | **VinoFYI** | [vinofyi.com](https://vinofyi.com) | **Wines, grapes, regions, wineries, food pairings** |
-| BeerFYI | [beerfyi.com](https://beerfyi.com) | 112 beer styles, hops, malts, yeast, brewing guides |
+| BeerFYI | [beerfyi.com](https://beerfyi.com) | 112 beer styles, hops, malts, yeast, BJCP |
 | BrewFYI | [brewfyi.com](https://brewfyi.com) | 72 coffee varieties, roasting, 21 brew methods |
 | WhiskeyFYI | [whiskeyfyi.com](https://whiskeyfyi.com) | 80 whiskey expressions, distilleries, regions |
 | TeaFYI | [teafyi.com](https://teafyi.com) | 60 tea varieties, teaware, brewing guides |
 | NihonshuFYI | [nihonshufyi.com](https://nihonshufyi.com) | 80 sake, rice varieties, 50 breweries |
-
-## FYIPedia Developer Tools
-
-| Package | PyPI | npm | Description |
-|---------|------|-----|-------------|
-| colorfyi | [PyPI](https://pypi.org/project/colorfyi/) | [npm](https://www.npmjs.com/package/@fyipedia/colorfyi) | Color conversion, WCAG contrast, harmonies -- [colorfyi.com](https://colorfyi.com) |
-| emojifyi | [PyPI](https://pypi.org/project/emojifyi/) | [npm](https://www.npmjs.com/package/emojifyi) | Emoji encoding & metadata for 3,953 emojis -- [emojifyi.com](https://emojifyi.com) |
-| symbolfyi | [PyPI](https://pypi.org/project/symbolfyi/) | [npm](https://www.npmjs.com/package/symbolfyi) | Symbol encoding in 11 formats -- [symbolfyi.com](https://symbolfyi.com) |
-| unicodefyi | [PyPI](https://pypi.org/project/unicodefyi/) | [npm](https://www.npmjs.com/package/unicodefyi) | Unicode lookup with 17 encodings -- [unicodefyi.com](https://unicodefyi.com) |
-| fontfyi | [PyPI](https://pypi.org/project/fontfyi/) | [npm](https://www.npmjs.com/package/fontfyi) | Google Fonts metadata & CSS -- [fontfyi.com](https://fontfyi.com) |
-| distancefyi | [PyPI](https://pypi.org/project/distancefyi/) | [npm](https://www.npmjs.com/package/distancefyi) | Haversine distance & travel times -- [distancefyi.com](https://distancefyi.com) |
-| timefyi | [PyPI](https://pypi.org/project/timefyi/) | [npm](https://www.npmjs.com/package/timefyi) | Timezone ops & business hours -- [timefyi.com](https://timefyi.com) |
-| namefyi | [PyPI](https://pypi.org/project/namefyi/) | [npm](https://www.npmjs.com/package/namefyi) | Korean romanization & Five Elements -- [namefyi.com](https://namefyi.com) |
-| unitfyi | [PyPI](https://pypi.org/project/unitfyi/) | [npm](https://www.npmjs.com/package/unitfyi) | Unit conversion, 220 units -- [unitfyi.com](https://unitfyi.com) |
-| holidayfyi | [PyPI](https://pypi.org/project/holidayfyi/) | [npm](https://www.npmjs.com/package/holidayfyi) | Holiday dates & Easter calculation -- [holidayfyi.com](https://holidayfyi.com) |
-| cocktailfyi | [PyPI](https://pypi.org/project/cocktailfyi/) | -- | Cocktail ABV, calories, flavor -- [cocktailfyi.com](https://cocktailfyi.com) |
-| **vinofyi** | [PyPI](https://pypi.org/project/vinofyi/) | -- | **Wine API client -- grapes, regions, wineries -- [vinofyi.com](https://vinofyi.com)** |
-| beerfyi | [PyPI](https://pypi.org/project/beerfyi/) | -- | Beer styles, hops, malts API -- [beerfyi.com](https://beerfyi.com) |
-| brewfyi | [PyPI](https://pypi.org/project/brewfyi/) | -- | Coffee varieties, brew methods API -- [brewfyi.com](https://brewfyi.com) |
-| whiskeyfyi | [PyPI](https://pypi.org/project/whiskeyfyi/) | -- | Whiskey expressions, distilleries API -- [whiskeyfyi.com](https://whiskeyfyi.com) |
-| teafyi | [PyPI](https://pypi.org/project/teafyi/) | -- | Tea varieties, teaware API -- [teafyi.com](https://teafyi.com) |
-| nihonshufyi | [PyPI](https://pypi.org/project/nihonshufyi/) | -- | Sake grades, breweries API -- [nihonshufyi.com](https://nihonshufyi.com) |
-| drinkfyi | [PyPI](https://pypi.org/project/drinkfyi/) | -- | Unified beverage hub -- 7 sites -- [fyipedia.com](https://fyipedia.com) |
-| fyipedia | [PyPI](https://pypi.org/project/fyipedia/) | -- | Unified CLI: `fyi color info FF6B35` -- [fyipedia.com](https://fyipedia.com) |
-| fyipedia-mcp | [PyPI](https://pypi.org/project/fyipedia-mcp/) | -- | Unified MCP hub for AI assistants -- [fyipedia.com](https://fyipedia.com) |
 
 ## License
 
