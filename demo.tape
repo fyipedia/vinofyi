@@ -1,24 +1,34 @@
-# vinofyi — Python Wine Encyclopedia Demo
+# vinofyi — Python Wine API Client Demo
 Output demo.gif
 
-Set FontSize 14
-Set Width 920
-Set Height 620
+Set FontSize 20
+Set Width 1000
+Set Height 580
 Set Shell "zsh"
 Set Theme "Catppuccin Mocha"
-Set TypingSpeed 35ms
-Set Padding 20
+Set TypingSpeed 30ms
+Set Padding 24
 
-Type `curl -s 'https://vinofyi.com/api/search/?q=pinot+noir' | jq '.results[:3][] | {name, type}'`
+Type "uv run --with vinofyi python3"
 Enter
-Sleep 3s
-
-Type `curl -s 'https://vinofyi.com/api/grape/pinot-noir/' | jq '{name, color, body, acidity}'`
-Enter
-Sleep 3s
-
-Type `curl -s 'https://vinofyi.com/api/random/' | jq '{name, type}'`
-Enter
-Sleep 3s
-
 Sleep 2s
+
+Type "from vinofyi.api import VinoFYI"
+Enter
+Sleep 1s
+
+Type "client = VinoFYI()"
+Enter
+Sleep 1s
+
+Type "# Search wines and grapes"
+Enter
+Sleep 0.5s
+
+Type "client.search('pinot noir')"
+Enter
+Sleep 2.5s
+
+Type "exit()"
+Enter
+Sleep 1s
