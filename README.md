@@ -1,6 +1,6 @@
 # vinofyi
 
-[![PyPI](https://img.shields.io/pypi/v/vinofyi)](https://pypi.org/project/vinofyi/)
+[![PyPI version](https://agentgif.com/badge/pypi/vinofyi/version.svg)](https://pypi.org/project/vinofyi/)
 [![Python](https://img.shields.io/pypi/pyversions/vinofyi)](https://pypi.org/project/vinofyi/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
