@@ -72,7 +72,7 @@ Wine is classified into six major categories based on production method, color, 
 
 Understanding wine types is essential for proper service temperature, glassware selection, and food pairing decisions.
 
-Learn more: [Wine Types Guide](https://vinofyi.com/type/) · [Wine Encyclopedia](https://vinofyi.com/wine/)
+Learn more: [Wine Encyclopedia](https://vinofyi.com/wines/)
 
 ### Grape Varieties
 
@@ -88,7 +88,7 @@ Key grape attributes tracked in the database:
 - **Climate preference** -- cool, moderate, or warm climate suitability
 - **Typical flavor profile** -- primary, secondary, and tertiary aromas
 
-Learn more: [Browse 777 Grape Varieties](https://vinofyi.com/grape/) · [Grape Search](https://vinofyi.com/search/)
+Learn more: [Browse 777 Grape Varieties](https://vinofyi.com/grapes/) · [Grape Search](https://vinofyi.com/search/)
 
 ### Wine Regions and Terroir
 
@@ -96,13 +96,11 @@ Wine regions are organized hierarchically from country to specific appellations.
 
 Major wine-producing countries include France, Italy, Spain, the United States, Argentina, Chile, Australia, Germany, Portugal, and South Africa. Each country's appellation system (AOC, DOC, AVA, GI) defines quality standards and geographic boundaries.
 
-Learn more: [Explore Wine Regions](https://vinofyi.com/region/) · [Country Profiles](https://vinofyi.com/country/)
-
-### Wine Guides
+Learn more: [Explore Wine Regions](https://vinofyi.com/regions/) · ### Wine Guides
 
 VinoFYI features 230 expert guides covering wine tasting methodology, food pairing principles, cellar management, and regional deep-dives. Guides range from beginner topics like understanding wine labels to advanced subjects like malolactic fermentation chemistry and barrel aging programs.
 
-Learn more: [Wine Guides Library](https://vinofyi.com/guide/) · [Wine Glossary](https://vinofyi.com/glossary/)
+Learn more: [Wine Guides Library](https://vinofyi.com/guides/) · [Wine Glossary](https://vinofyi.com/glossary/)
 
 ## API Endpoints
 
@@ -143,12 +141,12 @@ curl -s "https://vinofyi.com/api/v1/grapes/pinot-noir/"
   "notable_regions": ["Burgundy", "Willamette Valley", "Central Otago", "Sonoma Coast"],
   "flavor_profile": ["cherry", "raspberry", "earth", "mushroom", "spice"],
   "ideal_climate": "cool",
-  "url": "https://vinofyi.com/grapes/pinot-noir/"
+  "url": ""
 }
 ```
 
 Full API documentation: [vinofyi.com/developers/](https://vinofyi.com/developers/).
-OpenAPI 3.1.0 spec: [vinofyi.com/api/v1/openapi.json](https://vinofyi.com/api/v1/openapi.json).
+OpenAPI 3.1.0 spec: .
 
 ## Command-Line Interface
 
@@ -216,10 +214,7 @@ with VinoFYI() as api:
 - **Reference**: [Wines](https://vinofyi.com/wines/) | [Grape Varieties](https://vinofyi.com/grapes/) | [Wine Regions](https://vinofyi.com/regions/) | [Wineries](https://vinofyi.com/wineries/)
 - **Glossary**: [Wine Terminology](https://vinofyi.com/glossary/)
 - **Guides**: [Wine Guides](https://vinofyi.com/guides/)
-- **Compare**: [Wine Comparisons](https://vinofyi.com/compare/)
-- **API**: [Developer Docs](https://vinofyi.com/developers/) | [OpenAPI Spec](https://vinofyi.com/api/v1/openapi.json)
-
-## Beverage FYI Family
+- **Compare**: - **API**: [Developer Docs](https://vinofyi.com/developers/) | ## Beverage FYI Family
 
 Part of the [FYIPedia](https://fyipedia.com) open-source developer tools ecosystem -- world beverages from cocktails to sake.
 
