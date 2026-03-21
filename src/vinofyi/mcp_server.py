@@ -1,89 +1,88 @@
-"""MCP server for vinofyi — wine knowledge tools for AI assistants.
+"""MCP server for vinofyi — AI assistant tools for vinofyi.com.
 
-Requires the ``mcp`` extra: ``pip install vinofyi[mcp]``
-
-Run as a standalone server::
-
-    python -m vinofyi.mcp_server
-
-Or configure in ``claude_desktop_config.json``::
-
-    {
-        "mcpServers": {
-            "vinofyi": {
-                "command": "python",
-                "args": ["-m", "vinofyi.mcp_server"]
-            }
-        }
-    }
+Run: uvx --from "vinofyi[mcp]" python -m vinofyi.mcp_server
 """
-
 from __future__ import annotations
 
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("vinofyi")
+mcp = FastMCP("VinoFYI")
 
 
 @mcp.tool()
-def wine_search(query: str) -> str:
-    """Search wines, grapes, regions, and wine glossary terms from VinoFYI.
-
-    Returns matching results across all wine knowledge categories.
+def list_grapes(limit: int = 20, offset: int = 0) -> str:
+    """List grapes from vinofyi.com.
 
     Args:
-        query: Search term (e.g. "pinot noir", "bordeaux", "tannin").
+        limit: Maximum number of results. Default 20.
+        offset: Number of results to skip. Default 0.
+    """
+    from vinofyi.api import VinoFYI
+
+    with VinoFYI() as api:
+        data = api.list_grapes(limit=limit, offset=offset)
+        results = data.get("results", data) if isinstance(data, dict) else data
+        if not results:
+            return "No grapes found."
+        items = results[:limit] if isinstance(results, list) else []
+        return "\n".join(f"- {item.get('name', item.get('slug', '?'))}" for item in items)
+
+
+@mcp.tool()
+def get_grape(slug: str) -> str:
+    """Get detailed information about a specific grape.
+
+    Args:
+        slug: URL slug identifier for the grape.
+    """
+    from vinofyi.api import VinoFYI
+
+    with VinoFYI() as api:
+        data = api.get_grape(slug)
+        return str(data)
+
+
+@mcp.tool()
+def list_regions(limit: int = 20, offset: int = 0) -> str:
+    """List regions from vinofyi.com.
+
+    Args:
+        limit: Maximum number of results. Default 20.
+        offset: Number of results to skip. Default 0.
+    """
+    from vinofyi.api import VinoFYI
+
+    with VinoFYI() as api:
+        data = api.list_regions(limit=limit, offset=offset)
+        results = data.get("results", data) if isinstance(data, dict) else data
+        if not results:
+            return "No regions found."
+        items = results[:limit] if isinstance(results, list) else []
+        return "\n".join(f"- {item.get('name', item.get('slug', '?'))}" for item in items)
+
+
+@mcp.tool()
+def search_vino(query: str) -> str:
+    """Search vinofyi.com for wines, grapes, regions, and food pairings.
+
+    Args:
+        query: Search query string.
     """
     from vinofyi.api import VinoFYI
 
     with VinoFYI() as api:
         data = api.search(query)
-
-    results = data.get("results", [])
-    if not results:
-        return f"No results found for '{query}'."
-
-    lines = [
-        f"## Wine Search: {query}",
-        "",
-        f"Found {len(results)} result(s):",
-        "",
-        "| Type | Name | URL |",
-        "|------|------|-----|",
-    ]
-    for item in results:
-        lines.append(f"| {item.get('type', '')} | {item.get('name', '')} | {item.get('url', '')} |")
-    return "\n".join(lines)
+        results = data.get("results", data) if isinstance(data, dict) else data
+        if not results:
+            return f"No results found for \"{query}\"."
+        items = results[:10] if isinstance(results, list) else []
+        return "\n".join(f"- {item.get('name', item.get('slug', '?'))}" for item in items)
 
 
-@mcp.tool()
-def wine_glossary_term(slug: str) -> str:
-    """Look up a wine glossary term by slug from VinoFYI.
-
-    Returns the term name, definition, category, and related terms.
-
-    Args:
-        slug: Term slug (e.g. "terroir", "malolactic-fermentation", "tannin").
-    """
-    from vinofyi.api import VinoFYI
-
-    with VinoFYI() as api:
-        data = api.glossary_term(slug)
-
-    name = data.get("name", slug)
-    definition = data.get("definition", "No definition available.")
-    lines = [
-        f"## {name}",
-        "",
-        definition,
-    ]
-    if data.get("category"):
-        lines.extend(["", f"**Category:** {data['category']}"])
-    if data.get("related_terms"):
-        related = ", ".join(str(t) for t in data["related_terms"])
-        lines.extend(["", f"**Related terms:** {related}"])
-    return "\n".join(lines)
+def main() -> None:
+    """Run the MCP server."""
+    mcp.run()
 
 
 if __name__ == "__main__":
-    mcp.run()
+    main()

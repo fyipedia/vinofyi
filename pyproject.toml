@@ -1,6 +1,6 @@
 [project]
 name = "vinofyi"
-version = "0.1.2"
+version = "0.1.3"
 description = "Wine knowledge API client — search wines, grapes, regions, and wine terms from VinoFYI."
 readme = "README.md"
 license = "MIT"
@@ -42,6 +42,7 @@ all = ["vinofyi[api,cli,mcp]"]
 
 [project.scripts]
 vinofyi = "vinofyi.cli:app"
+vinofyi-mcp = "vinofyi.mcp_server:main"
 
 [project.entry-points."mcp.servers"]
 vinofyi = "vinofyi.mcp_server:mcp"
