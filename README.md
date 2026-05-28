@@ -239,6 +239,15 @@ Embed [VinoFYI](https://vinofyi.com) widgets on any website with [vinofyi-embed]
 
 Zero dependencies · Shadow DOM · 4 themes (light/dark/sepia/auto) · [Widget docs](https://widget.vinofyi.com)
 
+## Recently Updated (v0.1.5)
+
+Latest content state on [https://vinofyi.com](https://vinofyi.com):
+- [Homepage](https://vinofyi.com)
+- [Developer documentation](https://vinofyi.com/developers/)
+- [Sitemap (full content index)](https://vinofyi.com/sitemap.xml)
+
+Version bumped 2026-05-27 as part of the FYIPedia [SEO recovery refresh](https://github.com/dobestan).
+
 ## License
 
 MIT
