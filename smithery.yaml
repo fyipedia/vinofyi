@@ -1,0 +1,10 @@
+# Smithery configuration for vinofyi
+# https://smithery.ai/docs/build/project-config
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required: []
+    properties: {}
+  commandFunction: |-
+    config => ({ command: 'uvx', args: ['--from', 'vinofyi[mcp]', 'python', '-m', 'vinofyi.mcp_server'] })
